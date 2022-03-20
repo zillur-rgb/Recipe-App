@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  /* display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr)); */
-  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 `;
 
 export const Card = styled.div`
+  margin: 1rem;
   min-height: 350px;
   position: relative;
   border-radius: 2rem;
@@ -54,14 +54,14 @@ export const FlexDiv = styled.div`
 export const SingleCat = styled.div`
   background-color: coral;
   color: #fff;
-  height: 60px;
-  width: 60px;
-  overflow: hidden;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   cursor: pointer;
   margin: 10px;
   padding: 10px;
   border: 1px solid coral;
+  text-decoration: none;
 
   :hover {
     color: #565656;

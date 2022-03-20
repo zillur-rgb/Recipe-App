@@ -33,7 +33,7 @@ const Veggies = () => {
             arrows: false,
             pagination: false,
             drag: "free",
-            gap: "5rem",
+            gap: "3rem",
           }}
         >
           {veggie.map((pop) => {
