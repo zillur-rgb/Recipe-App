@@ -44,3 +44,28 @@ export const Gradient = styled.div`
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 `;
+
+export const FlexDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const SingleCat = styled.div`
+  background-color: coral;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid coral;
+
+  :hover {
+    color: #565656;
+    background-color: #fff;
+    border: 1px solid coral;
+  }
+`;

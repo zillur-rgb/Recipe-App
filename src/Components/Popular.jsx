@@ -12,7 +12,7 @@ const Popular = () => {
       setPopular(JSON.parse(check));
     } else {
       fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=9adf169d12924ead98d0e180e8d6e8f1&number=9&tags=vagitarian`
+        `https://api.spoonacular.com/recipes/random?apiKey=9adf169d12924ead98d0e180e8d6e8f1&number=9&tags=vegetarian`
       )
         .then((res) => res.json())
         .then((data) => {
