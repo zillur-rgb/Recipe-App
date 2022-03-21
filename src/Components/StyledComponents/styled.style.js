@@ -110,9 +110,10 @@ export const FormStyle = styled.form`
 
   svg {
     position: absolute;
-    top: 35%;
-    left: 2%;
+    top: 50%;
+    left: 0%;
     font-size: 1.2rem;
+    transform: translate(100%, -50%);
     color: #fff;
   }
 `;
