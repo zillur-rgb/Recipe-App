@@ -52,7 +52,7 @@ export const FlexDiv = styled.div`
 `;
 
 export const SingleCat = styled.div`
-  background-color: coral;
+  background-color: #565656;
   color: #fff;
   height: 90px;
   width: 90px;
@@ -60,12 +60,59 @@ export const SingleCat = styled.div`
   cursor: pointer;
   margin: 10px;
   padding: 10px;
-  border: 1px solid coral;
+  border: 1px solid #565656;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   :hover {
-    color: #565656;
     background-color: #fff;
-    border: 1px solid coral;
+    svg {
+      color: #565656;
+    }
+
+    p {
+      color: #565656;
+    }
+    border: 1px solid #565656;
+  }
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  p {
+    margin: 0;
+  }
+`;
+
+export const FormStyle = styled.form`
+  margin: 0 20rem;
+  div {
+    position: relative;
+    width: 100%;
+  }
+
+  input {
+    border: none;
+    background-color: #565656;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  svg {
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    font-size: 1.2rem;
+    color: #fff;
   }
 `;

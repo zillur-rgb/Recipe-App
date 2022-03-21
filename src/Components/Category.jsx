@@ -1,6 +1,6 @@
 import { GiHamburger, GiNoodles, GiFullPizza, GiSausage } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
-import { FlexDiv, SingleCat, SLink } from "./StyledComponents/styled.style";
+import { FlexDiv, SingleCat } from "./StyledComponents/styled.style";
 
 const Category = () => {
   const NavLinkStyle = {
