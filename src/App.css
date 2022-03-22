@@ -11,3 +11,7 @@ h1 {
   color: #565656;
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+}

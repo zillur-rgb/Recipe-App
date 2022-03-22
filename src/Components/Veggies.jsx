@@ -2,6 +2,7 @@ import React from "react";
 import { Wrapper, Card, Gradient } from "./StyledComponents/styled.style";
 import { useState, useEffect } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Link } from "react-router-dom";
 
 const Veggies = () => {
   const [veggie, setPopular] = useState([]);
@@ -40,9 +41,11 @@ const Veggies = () => {
             return (
               <SplideSlide key={pop.id}>
                 <Card>
-                  <p>{pop.title}</p>
-                  <img src={pop.image} alt="Food" />
-                  <Gradient />
+                  <Link to={`/recipe/${pop.id}`}>
+                    <p>{pop.title}</p>
+                    <img src={pop.image} alt="Food" />
+                    <Gradient />
+                  </Link>
                 </Card>
               </SplideSlide>
             );

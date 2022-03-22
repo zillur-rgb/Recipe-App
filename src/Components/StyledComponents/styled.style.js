@@ -117,3 +117,42 @@ export const FormStyle = styled.form`
     color: #fff;
   }
 `;
+
+export const DetailWrapper = styled.div`
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: flex;
+
+  .active {
+    background-color: #565656;
+    color: #fff;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+  }
+`;
+
+export const Button = styled.button`
+  padding: 1rem 2rem;
+  color: #565656;
+  background-color: #fff;
+  border: 2px solid black;
+  margin-right: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+`;
+
+export const Info = styled.div`
+  margin-left: 10rem;
+  text-align: left;
+`;

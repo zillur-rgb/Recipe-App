@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { Wrapper, Card } from "./StyledComponents/styled.style";
 
 const Searched = () => {
   const [searchedRecipes, getSearchedRecipes] = useState([]);
-  const params = useParams();
+  let params = useParams();
 
   const getSearched = async (name) => {
     const data = await fetch(
@@ -26,11 +26,13 @@ const Searched = () => {
       <Wrapper>
         {searchedRecipes.map((recipe) => {
           return (
-            <div>
-              <Card key={recipe.id}>
-                <img src={recipe.image} alt="" />
-              </Card>
-              <h4>{recipe.title}</h4>
+            <div key={recipe.id}>
+              <Link to={`/recipe/${recipe.id}`}>
+                <Card key={recipe.id}>
+                  <img src={recipe.image} alt="" />
+                </Card>
+                <h4>{recipe.title}</h4>
+              </Link>
             </div>
           );
         })}
