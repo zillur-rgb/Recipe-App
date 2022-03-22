@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Wrapper = styled.div`
   display: grid;
@@ -90,7 +91,7 @@ export const SingleCat = styled.div`
 `;
 
 export const FormStyle = styled.form`
-  margin: 0 20rem;
+  margin: 1.5rem 20rem;
   div {
     position: relative;
     width: 100%;
@@ -155,4 +156,10 @@ export const Button = styled.button`
 export const Info = styled.div`
   margin-left: 10rem;
   text-align: left;
+`;
+
+export const Logo = styled(Link)`
+  font-size: 1.5rem;
+  color: #565656;
+  font-family: cursive;
 `;
